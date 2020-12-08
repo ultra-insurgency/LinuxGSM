@@ -227,7 +227,7 @@ fn_sys_perm_error_process(){
 
 ## Run checks.
 if [ "$(whoami)" != "root" ]; then
-	fn_check_ownership
+	# fn_check_ownership
 	fn_check_permissions
 	if [ "${commandname}" == "START" ]; then
 		fn_sys_perm_error_process
